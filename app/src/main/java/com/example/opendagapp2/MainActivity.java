@@ -25,20 +25,20 @@ public class MainActivity extends AppCompatActivity {
         final Button OpleidingenButton = findViewById(R.id.OpleidingenButton);
         OpleidingenButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AgendaActivity.class));
+                startActivity(new Intent(MainActivity.this, OpleidingActivity.class));
             }
         });
 
         final Button GebouwenButton = findViewById(R.id.GebouwenButton);
         GebouwenButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AgendaActivity.class));
+                startActivity(new Intent(MainActivity.this, GebouwenActivity.class));
             }
         });
         final Button SettingsButton = findViewById(R.id.SettingsButton);
         SettingsButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, AgendaActivity.class));
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
             }
         });
 

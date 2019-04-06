@@ -1,6 +1,5 @@
 package com.example.opendagapp2;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 public class AgendaActivity extends AppCompatActivity {
 //amyhier
@@ -24,7 +22,7 @@ public class AgendaActivity extends AppCompatActivity {
 
 
             simpleList = (ListView) findViewById(R.id.ListView);
-            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listview, R.id.textView, countryList);
+            ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listview_agenda, R.id.textView, countryList);
             simpleList.setAdapter(arrayAdapter);
         simpleList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
